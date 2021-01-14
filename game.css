@@ -1,0 +1,22 @@
+
+* { padding: 0; margin: 0; }
+canvas { background: #eee; display: block; margin: 0 auto; }
+
+button {
+    margin: 10px;
+    padding: 10px 25px;
+    color: white;
+    border: 1px solid lightgrey;
+    background-color: #0095C8;
+    border-radius: 5px;
+}
+
+.game{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.game-title {
+    font-family: "Segoe UI",Arial,sans-serif;
+    color: #0095C8;
+}

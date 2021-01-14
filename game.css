@@ -1,6 +1,10 @@
 
 * { padding: 0; margin: 0; }
-canvas { background: #eee; display: block; margin: 0 auto; }
+canvas { 
+    background: #eee; 
+    display: block; 
+    margin: 0 auto; 
+}
 
 button {
     margin: 10px;
@@ -19,4 +23,9 @@ button {
 .game-title {
     font-family: "Segoe UI",Arial,sans-serif;
     color: #0095C8;
+}
+
+#myCanvas {
+    width: 320px;
+    height: 400px;
 }

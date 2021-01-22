@@ -36,23 +36,25 @@ var lives = 3;
 var isPaused = false;
 var isStarted = false;
 
+const textColor = '#167979';
+const gameColor = '#54c7c7';
 
 function drawLives() {
     ctx.font = "16px Arial";
-    ctx.fillStyle = "#0095DD";
+    ctx.fillStyle = textColor;
     ctx.fillText("Lives: "+lives, canvasW-65, 20);
 }
 
 function drawScore() {
     ctx.font = "16px Arial";
-    ctx.fillStyle = "#0095DD";
+    ctx.fillStyle = textColor;
     ctx.fillText("Score: "+score, 8, 20);
 }
 
 function drawStartText() {
     console.log(ctx);
     ctx.font = "16px Arial";
-    ctx.fillStyle = "#0095DD";
+    ctx.fillStyle = textColor;
     ctx.fillText("Click the START button",80,180);
     ctx.fillText("to start a new game",93,200);
 }
@@ -76,7 +78,7 @@ function drawBricks() {
                 bricks[c][r].y = brickY;
                 ctx.beginPath();
                 ctx.rect(brickX, brickY, brickWidth, brickHeight);
-                ctx.fillStyle = "#0095DD";
+                ctx.fillStyle = gameColor;
                 ctx.fill();
                 ctx.closePath();
             }
@@ -95,7 +97,7 @@ function drawBall() {
 function drawPaddle() {
     ctx.beginPath();
     ctx.rect(paddleX, canvasH-paddleHeight, paddleWidth, paddleHeight);
-    ctx.fillStyle = "#0095DD";
+    ctx.fillStyle = gameColor;
     ctx.fill();
     ctx.closePath();
 }

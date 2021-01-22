@@ -11,7 +11,7 @@ button {
     padding: 10px 25px;
     color: white;
     border: 1px solid lightgrey;
-    background-color: #0095C8;
+    background-color: #25bebe;
     border-radius: 5px;
 }
 
@@ -22,7 +22,9 @@ button {
 
 .game-title {
     font-family: "Segoe UI",Arial,sans-serif;
-    color: #0095C8;
+    color: #a1e4e4;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 #myCanvas {
